@@ -1,0 +1,127 @@
+body{
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+}
+
+
+.top {
+    text-align: center;
+    margin: 3rem 0;
+}
+.top h1 {
+    font-size: 30px;
+    font-family: 'Pangolin', cursive;
+    font-weight: bold;
+}
+
+
+ul li {
+
+  list-style: none;
+}
+
+ul {
+
+  float: left;
+  width: 31%;
+  border: 3px solid #020202;
+  margin: 6px 10px;
+  text-align: left;
+  padding: 0;
+  position: relative;
+  background: gray;
+}
+ul li.up {
+	border: 3px solid black;
+	width: 15%;
+	text-align: center;
+	font-weight: 900;
+	font-style: italic;
+	font-family: 'Pangolin', cursive;
+	margin: 0 0 16px auto;
+	position: absolute;
+	left: 84%;
+	top: -2%;
+}
+
+ul li.down {
+	padding: 33px;
+}
+.middle1 ul li.up {
+	background: pink;
+}
+.middle2 ul li.up {
+	background: red;
+}
+.middle3 ul li.up {
+	background: yellow;
+}
+
+
+
+@media screen and (max-width: 1129px) {
+    ul {
+        width: 95%;
+        margin: 6px;
+    }
+    .middle1, .middle2 {
+        width: 50%;
+        float: left;
+    }
+    .middle3 {
+        width: 102.7%;
+        margin: 0 auto;
+    }
+    .middle1 ul li.up {
+        left: 84.4%;
+    }
+    .middle2 ul li.up {
+        left: 84.4%;
+    }
+    .middle3 ul li.up {
+        left: 91.7%;
+        width: 8%;
+    }
+}
+ 
+
+  @media screen and (max-width: 836px) {
+    .middle1 ul li.up {
+        left: 74.4%;
+        top: -1.5%;
+        width: 24%;
+    }
+    .middle2 ul li.up {
+        left: 74.4%;
+        top: -1.5%;
+        width: 24%;
+    }
+    .middle3 ul li.up {
+        left: 86.5%;
+        top: -1.5%;
+        width: 13%;
+    }
+}
+
+
+@media screen and (max-width: 582px) {
+    .top {
+        margin: 1rem 0 -20px 0;
+    }
+    .middle3 ul li.up {
+        left: 74.4%;
+        top: -1.5%;
+        width: 24%;
+    }
+    .middle1, .middle2 {
+        width: 100%;
+    }
+    .middle3 {
+        width: 100%;
+    }
+    ul {
+        width: 95%;
+        margin: 15px 6px;
+    }
+    
+}
